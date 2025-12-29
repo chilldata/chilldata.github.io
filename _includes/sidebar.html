@@ -5,6 +5,15 @@
   <p class="page__taxonomy">
     <strong>Total Posts ({{ site.posts | size }})</strong>
   </p>
+  <!-- ALGORITHMS -->
+  <h4 class="taxonomy__title">ALGORITHMS</h4>
+  <ul>
+    {% assign algo_posts = site.posts | where_exp: "post", "post.categories[0]
+    == 'Algorithms'" %} {% assign algo_groups = algo_posts | group_by_exp:
+    "post", "post.categories[1]" %} {% for g in algo_groups %}
+    <li>{{ g.name }} ({{ g.items | size }})</li>
+    {% endfor %}
+  </ul>
   {% if page.sidebar %} {% for s in page.sidebar %} {% if s.image %}
   <img
     src="{{ s.image | relative_url }}"
