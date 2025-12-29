@@ -349,3 +349,36 @@
     margin-inline-end: initial;
   }
 }
+
+/* Sidebar main category title */
+.sidebar .taxonomy__title {
+  font-size: 0.75rem; // 글씨 작게
+  font-weight: 700;
+  letter-spacing: 0.08em; // 대문자 간격
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #e5e7eb; // 얇은 밑줄
+  color: #111;
+}
+
+/* Sidebar sub category list */
+.sidebar ul {
+  margin: 0 0 1rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  font-size: 0.78rem; // 작게
+  line-height: 1.6;
+  color: #374151; // 연한 회색
+}
+
+/* Total Posts */
+.sidebar .page__taxonomy {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
